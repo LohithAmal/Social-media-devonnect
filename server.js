@@ -4,6 +4,8 @@ const app = express();
 
 // connect database
 connectDB();
+// middleware
+app.use(express.json({ extended: false }));
 // define routes
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/profiles", require("./routes/api/profiles"));
