@@ -8,7 +8,7 @@ const connectDB = async () => {
       useNewUrlParser: true,
     });
     console.log("MONGODB CONNECTED......");
-  } catch (error) {
+  } catch (err) {
     console.error(err.message);
     // exit the process if failed
     process.exit(1);
